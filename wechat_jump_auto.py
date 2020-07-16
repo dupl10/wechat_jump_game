@@ -59,7 +59,7 @@ def set_button_position(im):
     left = int(w / 2)
     top = int(1584 * (h / 1920.0))
     left = int(random.uniform(left-50, left+50))
-    top = int(random.uniform(top-10, top+10))    # 随机防 ban
+    top = int(random.uniform(top-50, top+50))    # 随机防 ban
     swipe_x1, swipe_y1, swipe_x2, swipe_y2 = left, top, left, top
 
 
@@ -244,7 +244,7 @@ def main():
             i, next_rest, next_rest_time = (0, random.randrange(30, 100),
                                             random.randrange(10, 60))
         # 为了保证截图的时候应落稳了，多延迟一会儿，随机值防 ban
-        time.sleep(random.uniform(0.9, 1.2))
+        time.sleep(random.uniform(0.9, 1.6))
 
 
 if __name__ == '__main__':

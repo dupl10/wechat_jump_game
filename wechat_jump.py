@@ -70,12 +70,12 @@ def updatefig(*args):
 
 
 def on_click(event):
-    global update    
+    global update
     global src_x, src_y
-    
+
     dst_x, dst_y = event.xdata, event.ydata
 
-    distance = (dst_x - src_x)**2 + (dst_y - src_y)**2 
+    distance = (dst_x - src_x)**2 + (dst_y - src_y)**2
     distance = (distance ** 0.5) / scale
     print('distance = ', distance)
     jump(distance)
